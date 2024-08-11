@@ -11,34 +11,24 @@ M.highlights = function(colors)
 		--  completion menu
 		Pmenu               = { fg = colors.Pmenu, bg = colors.bg }, -- completion window border color and background color
 		PmenuSel            = { fg = colors.PmenuSelFG, bg = colors.PmenuSelBG },
-		PmenuSbar           = { bg = colors.PmenuSbar },
 		PmenuThumb          = { bg = colors.PmenuThumb },
 
 		NormalFloat         = { fg = colors.NormalFloat, bg = colors.bg }, -- floating window
-		FloatBorder         = { fg = colors.FloatBorder, bg = "NONE" },
 		Folded              = { fg = colors.FoldedFG, bg = colors.FoldedBG },
-		VertSplit           = { fg = colors.VertSplit, bg = colors.bg },
 		LineNr              = { fg = colors.LineNr, bg = colors.bg }, -- number column
 		CursorLineNr        = { fg = colors.CursorLineNrFG, bg = colors.CursorLineNrBG, bold = true },
 		Cursor              = { fg = colors.Cursor, bg = colors.bg },
 		CursorColumn        = { fg = "NONE", bg = "NONE" },
-		FoldColumn          = { fg = colors.FoldColumn },
 		CursorLine          = { bg = colors.CursorLine },
-		-- CursorIM           =  { fg=colors.cursor_fg, bg=colors.cursor_bg },
 		SignColumn          = { fg = colors.bg, bg = colors.bg },
 		ColorColumn         = { bg = colors.bg },
 		Conceal             = { fg = colors.fg },
 		QuickFixLine        = { bg = colors.QuickFixLine },
-		Repeat              = { fg = colors.Repeat },
-		Whitespace          = { fg = colors.Whitespace },
-		WildMenu            = { fg = colors.fg },
 		WarningMsg          = { fg = colors.WarningMsgFG, bg = colors.WarningMsgBG },
 		Search              = { fg = colors.SearchFG, bg = colors.SearchBg },
-		IncSearch           = { fg = colors.IncSearch, bg = colors.SearchFG },
 		CurSearch           = { fg = colors.SearchFG, bg = colors.CurSearch },
 		lCursor             = { fg = colors.lCursorFG, bg = colors.lCursorBG },
 		TermCursor          = { fg = colors.lCursorFG, bg = colors.lCursorBG },
-		TermCursorNC        = { fg = colors.lCursorFG, bg = colors.lCursorBG },
 		StatusLine          = { fg = colors.StatusLine, bg = colors.StatusLine },
 		StatusLineNC        = { fg = colors.StatusLineNCFG, bg = colors.StatusLineNCBG },
 		Delimiter           = { fg = colors.Delimiter },
@@ -49,74 +39,44 @@ M.highlights = function(colors)
 		DiffRemoved         = { fg = colors.DiffRemoved },
 		DiffText            = { fg = colors.DiffText },
 		DiffFile            = { fg = colors.DiffFile },
-		StatusLineTerm      = { fg = colors.StatusLineTermFG, bg = colors.StatusLineTermBG },
-		StatusLineTermNC    = { fg = colors.StatusLineTermNCFG, bg = colors.StatusLineTermNCBG },
 		StatusLineSeparator = { fg = colors.StatusLineSeparator },
 		Underline           = { underline = true },
-		Label               = { fg = colors.Label }, -- underline Highlighted defination
 		MatchParen          = { fg = colors.MatchParenFG, bg = colors.MatchParenBG },
 		MatchParenCur       = { underline = true },
 		MatchWord           = { underline = true },
 		MatchWordCur        = { underline = true },
 		MoreMsg             = { fg = colors.MoreMsg },
 		ModeMsg             = { fg = colors.fg, bg = colors.bg },
-		MsgArea             = { fg = colors.fg, bg = colors.bg, },
-		MsgSeparator        = { fg = colors.fg, bg = colors.bg },
 		Normal              = { fg = colors.fg, bg = colors.bg, },
-		NormalNC            = { fg = colors.fg, bg = colors.bg, },
 		Error               = { fg = colors.Error, bg = colors.bg, bold = true },
 		ErrorMsg            = { fg = colors.ErrorMsg, bg = colors.bg, bold = true }, -- command error message
-		Debug               = { fg = colors.fg },
 		Visual              = { fg = "NONE", bg = colors.Visual, bold = true },
-		Substitute          = { fg = colors.SubstituteFG, bg = colors.SubstituteBG },
-		VisualNOS           = { fg = colors.VisualNOSFG, bg = colors.VisualNOSBG },
-
-		TabLine             = { fg = colors.TabLineFG, bg = colors.TabLineBG },
-		TabLineFill         = { fg = colors.bg },
 		TabLineSel          = { fg = colors.fg, bg = colors.TabLineSel },
 		TabLineCurrentWin   = { fg = colors.TabLineCurrentWin, bg = colors.TabLineBG }, -- its non standard highlight group defined for tabby.nvim
 
 		-- LANGUAGE SYNTAX
 
-		Boolean             = { fg = colors.Boolean },
-		Character           = { fg = colors.Character },
 		Comment             = { fg = colors.Comment, italic = true },
-		Conditional         = { fg = colors.Conditional },
 		Constant            = { fg = colors.Constant },
-		Define              = { fg = colors.Define },
-		Exception           = { fg = colors.Exception },
-		Float               = { fg = colors.Float },
 		Identifier          = { fg = colors.Identifier },
-		Ignore              = { fg = colors.Ignore },
-		Macro               = { fg = colors.Macro },
 		NonText             = { fg = colors.NonText },
-		Number              = { fg = colors.Number },
 		Operator            = { fg = colors.Operator },
-		PreCondit           = { fg = colors.PreCondit },
 		PreProc             = { fg = colors.PreProc },
 		Question            = { fg = colors.Question },
 		Special             = { fg = colors.Special },
-		SpecialChar         = { fg = colors.SpecialChar },
-		SpecialComment      = { fg = colors.SpecialComment },
 		SpecialKey          = { fg = colors.SpecialKey, bold = true },
 		SpellBad            = { fg = colors.SpellBad, underline = true },
 		SpellCap            = { fg = colors.SpellCap, underline = true },
 		SpellLocal          = { fg = colors.SpellLocal, underline = true },
 		SpellRare           = { fg = colors.SpellRare, underline = true },
 		Statement           = { fg = colors.Statement },
-		StorageClass        = { fg = colors.StorageClass },
 		String              = { fg = colors.String },
-		Structure           = { fg = colors.Structure },
-		Tag                 = { fg = colors.Tag },
 		Title               = { fg = colors.Title },
 		Todo                = { fg = colors.TodoFG, bg = "NONE", bold = true },
 		Type                = { fg = colors.Type },
-		Typedef             = { fg = colors.Typedef },
 		Variable            = { fg = colors.Variable },
 		URI                 = { fg = colors.URI, underline = true },
 		Parameter           = { fg = colors.Parameter, italic = true },
-		Keyword             = { fg = colors.Keyword },
-		Include             = { fg = colors.Include },
 		KeywordFunction     = { fg = colors.KeywordFunction },
 		KeywordReturn       = { fg = colors.KeywordReturn },
 		KeywordOperator     = { fg = colors.KeywordOperator },
@@ -152,6 +112,223 @@ M.highlights = function(colors)
 		Emphasis            = { italic = true },
 
 
+		-----------------------------------------
+		-- Links
+
+		Boolean                         = { link = "Constant" },
+		Character                       = { link = "Constant" },
+		Conditional                     = { link = "Statement" },
+		CursorIM                        = { link = "Cursor" },
+		CursorLineFold                  = { link = "FoldColumn" },
+		CursorLineSign                  = { link = "SignColumn" },
+		Debug                           = { link = "Special" },
+		Define                          = { link = "PreProc" },
+		EndOfBuffer                     = { link = "NonText" },
+		Exception                       = { link = "Statement" },
+		Float                           = { link = "Number" },
+		FloatBorder                     = { link = "NormalFloat" },
+		FloatFooter                     = { link = "FloatTitle" },
+		FloatTitle                      = { link = "Title" },
+		FoldColumn                      = { link = "SignColumn" },
+		Ignore                          = { link = "Normal" },
+		IncSearch                       = { link = "CurSearch" },
+		Include                         = { link = "PreProc" },
+		Keyword                         = { link = "Statement" },
+		Label                           = { link = "Statement" },
+		LineNrAbove                     = { link = "LineNr" },
+		LineNrBelow                     = { link = "LineNr" },
+		Macro                           = { link = "PreProc" },
+		MsgArea                         = { link = "NONE" },
+		MsgSeparator                    = { link = "StatusLine" },
+		NormalNC                        = { link = "NONE" },
+		Number                          = { link = "Constant" },
+		PmenuExtra                      = { link = "Pmenu" },
+		PmenuExtraSel                   = { link = "PmenuSel" },
+		PmenuKind                       = { link = "Pmenu" },
+		PmenuKindSel                    = { link = "PmenuSel" },
+		PmenuMatch                      = { link = "Pmenu" },
+		PmenuMatchSel                   = { link = "PmenuSel" },
+		PmenuSbar                       = { link = "Pmenu" },
+		PreCondit                       = { link = "PreProc" },
+		Repeat                          = { link = "Statement" },
+		SnippetTabstop                  = { link = "Visual" },
+		SpecialChar                     = { link = "Special" },
+		SpecialComment                  = { link = "Special" },
+		StatusLineTerm                  = { link = "StatusLine" },
+		StatusLineTermNC                = { link = "StatusLineNC" },
+		StorageClass                    = { link = "Type" },
+		Structure                       = { link = "Type" },
+		Substitute                      = { link = "Search" },
+		TabLine                         = { link = "StatusLineNC" },
+		TabLineFill                     = { link = "TabLine" },
+		Tag                             = { link = "Special" },
+		TermCursorNC                    = { link = "NONE" },
+		Typedef                         = { link = "Type" },
+		VertSplit                       = { link = "WinSeparator" },
+		VisualNOS                       = { link = "Visual" },
+		Whitespace                      = { link = "NonText" },
+		WildMenu                        = { link = "PmenuSel" },
+		WinSeparator                    = { link = "Normal" },
+
+		-----------------------------------------
+		-- treesitter:  github.com/nvim-treesitter/nvim-treesitter
+		-----------------------------------------
+
+		["@attribute"]                  = { link = "Macro" },
+		["@attribute.builtin"]          = { link = "Special" },
+		["@boolean"]                    = { link = "Boolean" },
+		["@character"]                  = { link = "Character" },
+		["@character.special"]          = { link = "SpecialChar" },
+		["@comment"]                    = { link = "Comment" },
+		["@comment.error"]              = { link = "DiagnosticError" },
+		["@comment.note"]               = { link = "DiagnosticInfo" },
+		["@comment.todo"]               = { link = "Todo" },
+		["@comment.warning"]            = { link = "DiagnosticWarn" },
+		["@conceal"]                    = { link = "Conceal" },
+		["@constant"]                   = { link = "Constant" },
+		["@constant.builtin"]           = { link = "Special" },
+		["@constructor"]                = { link = "Special" },
+		["@diff.delta"]                 = { link = "Changed" },
+		["@diff.minus"]                 = { link = "Removed" },
+		["@diff.plus"]                  = { link = "Added" },
+		["@function"]                   = { link = "Function" },
+		["@function.builtin"]           = { link = "Special" },
+		["@keyword"]                    = { link = "Keyword" },
+		["@label"]                      = { link = "Label" },
+		["@lsp.mod.deprecated"]         = { link = "DiagnosticDeprecated" },
+		["@lsp.type.class"]             = { link = "@type" },
+		["@lsp.type.comment"]           = { link = "@comment" },
+		["@lsp.type.decorator"]         = { link = "@attribute" },
+		["@lsp.type.enum"]              = { link = "@type" },
+		["@lsp.type.enumMember"]        = { link = "@constant" },
+		["@lsp.type.event"]             = { link = "@type" },
+		["@lsp.type.function"]          = { link = "@function" },
+		["@lsp.type.interface"]         = { link = "@type" },
+		["@lsp.type.keyword"]           = { link = "@keyword" },
+		["@lsp.type.macro"]             = { link = "@constant.macro" },
+		["@lsp.type.method"]            = { link = "@function.method" },
+		["@lsp.type.modifier"]          = { link = "@type.qualifier" },
+		["@lsp.type.namespace"]         = { link = "@module" },
+		["@lsp.type.number"]            = { link = "@number" },
+		["@lsp.type.operator"]          = { link = "@operator" },
+		["@lsp.type.parameter"]         = { link = "@variable.parameter" },
+		["@lsp.type.property"]          = { link = "@property" },
+		["@lsp.type.regexp"]            = { link = "@string.regexp" },
+		["@lsp.type.string"]            = { link = "@string" },
+		["@lsp.type.struct"]            = { link = "@type" },
+		["@lsp.type.type"]              = { link = "@type" },
+		["@lsp.type.typeParameter"]     = { link = "@type.definition" },
+		["@lsp.type.variable"]          = { link = "@variable" },
+		["@markup"]                     = { link = "Special" },
+		["@markup.heading"]             = { link = "Title" },
+		["@markup.italic"]              = { italic = true },
+		["@markup.link"]                = { link = "Underline" },
+		["@markup.strikethrough"]       = { strikethrough = true },
+		["@markup.strong"]              = { bold = true },
+		["@markup.underline"]           = { underline = true },
+		["@module"]                     = { link = "Structure" },
+		["@module.builtin"]             = { link = "Special" },
+		["@number"]                     = { link = "Number" },
+		["@number.float"]               = { link = "Float" },
+		["@operator"]                   = { link = "Operator" },
+		["@property"]                   = { link = "Identifier" },
+		["@punctuation"]                = { link = "Delimiter" },
+		["@punctuation.specia"]         = { link = "Special" },
+		["@string"]                     = { link = "String" },
+		["@string.escape"]              = { link = "@string.special" },
+		["@string.regexp"]              = { link = "@string.special" },
+		["@string.special"]             = { link = "SpecialChar" },
+		["@string.special.url"]         = { link = "Underline" },
+		["@tag"]                        = { link = "Tag" },
+		["@tag.builtin"]                = { link = "Special" },
+		["@type"]                       = { link = "Type" },
+		["@type.builtin"]               = { link = "Special" },
+		["@variable.builtin"]           = { link = "Special" },
+		["@variable.parameter"]         = { italic = true },
+		["@variable.parameter.builtin"] = { link = "Special" },
+
+
+		-----------------------------------------
+		-- LANGUAGE SYNTAX
+		-----------------------------------------
+
+		-- Markdown
+
+		-- markdownH1                    = { link = "Title" },
+		-- markdownH2                    = { link = "Title" },
+		-- markdownH3                    = { link = "Title" },
+		-- markdownH4                    = { link = "Title" },
+		-- markdownH5                    = { link = "Title" },
+		-- markdownH6                    = { link = "Title" },
+		-- markdownId                    = { fg = colors.markId },
+		-- markdownUrl                   = { fg = colors.markUrl, underline = true },
+		-- markdownRule                  = { fg = colors.markRule },
+		-- markdownBold                  = { fg = colors.markBold, bold = true },
+		-- markdownCode                  = { fg = colors.markCode },
+		-- markdownItalic                = { fg = colors.markItalic, italic = true },
+		-- markdownCodeBlock             = { fg = colors.markCodeBlock },
+		-- markdownCodeError             = { fg = colors.markCodeError },
+		-- markdownLinkText              = { fg = colors.markLinkText },
+		-- markdownListMarker            = { fg = colors.markList },
+		-- markdownCodeSpecial           = { fg = colors.markCodeSpecial },
+		-- markdownCodeDelimiter         = { fg = colors.markCodeDelimiter },
+		-- markdownBlockquote            = { fg = colors.markQuote },
+		-- markdownIdDeclaration         = { fg = colors.markIdDeclaration },
+		-- markdownIdDelimiter           = { fg = colors.markIdDelimiter },
+		-- markdownLinkDelimiter         = { fg = colors.markLinkDelimiter },
+		-- markdownHeadingRule           = { fg = colors.markHeadingRule },
+		-- markdownHeadingDelimiter      = { fg = colors.markHeadingDelimiter },
+		-- markdownUrlTitleDelimiter     = { fg = colors.markUrlTitleDelimiter },
+		-- markdownOrderedListMarker     = { fg = colors.markOrderedListMarker },
+
+		-- HTML language:
+
+		htmlArg                   = { italic = true },
+
+		-- CSS / SASS / SCSS
+
+		cssFlexibleBoxAttr        = { italic = true }, -- example -> center
+		cssColor                  = { italic = true }, -- example -> green, red, blue
+		cssUnitDecorators         = { italic = true }, -- exaple -> rem, em, px,
+		cssTagName                = { link = "Tag" }, -- only changes bold/italic| example -> body, html
+		cssBoxProp                = { link = "Property" },
+		cssBraces                 = { link = "PunctBracket" },
+		cssUIProp                 = { link = "Property" },
+
+		sassDefinition            = { link = "Definition" },
+		sassProperty              = { link = "Property" },
+		sassCssAttribute          = { link = "Attribute" },
+		sassInclude               = { link = "Include" },
+
+		cssTSPunctDelimiter       = { link = "PunctDelimiter" }, -- example -> :
+		cssTSPunctBracket         = { link = "PunctBracket" }, -- example -> { },()
+		cssTSProperty             = { link = "Property" }, -- example -> background-color, display, text-align
+		cssTSType                 = { link = "Type" },     -- only changes color | example -> body, html
+
+		scssTSProperty            = { link = "Property" },
+		scssTSPunctBracket        = { link = "PunctBracket" },
+
+		-- JSON Language
+
+		jsonLabel                 = { link = "Label" },
+		jsonKeyword               = { link = "Label" },
+		jsonKeywordMatch          = { link = "MatchWord", bold = true },
+		jsonString                = { link = "String", italic = true },
+
+		jsonTSLabel               = { link = "Label" },
+		jsonTSPunctBracket        = { link = "PunctBracket", bold = true },
+
+		-- MAKE Language
+
+		cmakeCommand              = { link = "Function" },
+		cmakeArguments            = { link = "Special" },
+		cmakeKWvariable_watch     = { link = "Variable" },
+		cmakeKWproject            = { link = "Function" },
+		cmakeGeneratorExpressions = { link = "Special" },
+		cmakeVariable             = { link = "Variable" },
+		cmakeKWuse_mangled_mesa   = { italic = true },
+		cmakeTSVariable           = { link = "Variable" },
+
 
 
 		-----------------------------------------
@@ -160,123 +337,140 @@ M.highlights = function(colors)
 
 		-- Buffer: github.com/akinsho/nvim-bufferline.lua
 
-		BufferCloseButtonSelected     = { fg = colors.fg, bg = colors.BufferCloseButtonSelected },
-		BufferCurrent                 = { fg = colors.BufferCurrentFg, bg = colors.BufferCurrentBg },
-		BufferCurrentIndex            = { fg = colors.fg, bg = colors.bg },
-		BufferCurrentMod              = { fg = colors.BufferCurrentMod, bg = colors.bg },
-		BufferCurrentSign             = { fg = colors.BufferCurrentSign, bg = colors.bg },
-		BufferCurrentTarget           = { fg = colors.BufferCurrentTarget, bg = colors.bg, bold = true },
-		BufferInactive                = { fg = colors.BufferInactive, bg = colors.second_bg },
-		BufferInactiveIndex           = { fg = colors.BufferInactiveIndex, bg = colors.second_bg },
-		BufferInactiveMod             = { fg = colors.BufferInactiveMod, bg = colors.second_bg },
-		BufferInactiveSign            = { fg = colors.BufferInactiveSign, bg = colors.second_bg },
-		BufferInactiveTarget          = { fg = colors.BufferInactiveTarget, bg = colors.second_bg, bold = true },
-		BufferIndicatorSelected       = { fg = colors.fg, bg = colors.BufferIndicatorSelected },
-		BufferLineFill                = { fg = colors.fg, bg = colors.BufferLineFill, bold = true },
-		BuffNumbers                   = { fg = colors.fg, bg = colors.BuffNumbers },
-		BufferVisible                 = { fg = colors.fg, bg = colors.bg },
-		BufferVisibleIndex            = { fg = colors.fg, bg = colors.bg },
-		BufferVisibleMod              = { fg = colors.BufferVisibleMod, bg = colors.bg },
-		BufferVisibleSign             = { fg = colors.BufferVisibleSign, bg = colors.bg },
-		BufferVisibleTarget           = { fg = colors.BufferVisibleTarget, bg = colors.bg, bold = true },
-		BufferSelected                = { bg = colors.BufferSelected },
+		BufferCloseButtonSelected  = { fg = colors.fg, bg = colors.BufferCloseButtonSelected },
+		BufferCurrent              = { fg = colors.BufferCurrentFg, bg = colors.BufferCurrentBg },
+		BufferCurrentIndex         = { fg = colors.fg, bg = colors.bg },
+		BufferCurrentMod           = { fg = colors.BufferCurrentMod, bg = colors.bg },
+		BufferCurrentSign          = { fg = colors.BufferCurrentSign, bg = colors.bg },
+		BufferCurrentTarget        = { fg = colors.BufferCurrentTarget, bg = colors.bg, bold = true },
+		BufferInactive             = { fg = colors.BufferInactive, bg = colors.second_bg },
+		BufferInactiveIndex        = { fg = colors.BufferInactiveIndex, bg = colors.second_bg },
+		BufferInactiveMod          = { fg = colors.BufferInactiveMod, bg = colors.second_bg },
+		BufferInactiveSign         = { fg = colors.BufferInactiveSign, bg = colors.second_bg },
+		BufferInactiveTarget       = { fg = colors.BufferInactiveTarget, bg = colors.second_bg, bold = true },
+		BufferIndicatorSelected    = { fg = colors.fg, bg = colors.BufferIndicatorSelected },
+		BufferLineFill             = { fg = colors.fg, bg = colors.BufferLineFill, bold = true },
+		BuffNumbers                = { fg = colors.fg, bg = colors.BuffNumbers },
+		BufferVisible              = { fg = colors.fg, bg = colors.bg },
+		BufferVisibleIndex         = { fg = colors.fg, bg = colors.bg },
+		BufferVisibleMod           = { fg = colors.BufferVisibleMod, bg = colors.bg },
+		BufferVisibleSign          = { fg = colors.BufferVisibleSign, bg = colors.bg },
+		BufferVisibleTarget        = { fg = colors.BufferVisibleTarget, bg = colors.bg, bold = true },
+		BufferSelected             = { bg = colors.BufferSelected },
 
 		-- Tabs
-		TabSelectedFG                 = { fg = colors.TabSelectedFG },
-		TabSelectedBG                 = { bg = colors.TabSelectedBG },
-		TabFG                         = { fg = colors.TabFG },
-		TabBG                         = { bg = colors.TabBG },
+		TabSelectedFG              = { fg = colors.TabSelectedFG },
+		TabSelectedBG              = { bg = colors.TabSelectedBG },
+		TabFG                      = { fg = colors.TabFG },
+		TabBG                      = { bg = colors.TabBG },
 
 		-- Cmp: github.com/hrsh7th/nvim-cmp
 
-		CmpDocumentation              = { fg = colors.CmpDocumentation, bg = colors.none },
-		CmpDocumentationBorder        = { fg = colors.CmpDocumentationBorder, bg = colors.none },
-		CmpItemAbbr                   = { fg = colors.CmpItemAbbr, bg = colors.none },
-		CmpItemAbbrDeprecated         = { fg = colors.CmpItemAbbrDeprecated, bg = colors.none },
-		CmpItemAbbrMatch              = { fg = colors.CmpItemAbbrMatch, bg = colors.none },
-		CmpItemAbbrMatchFuzzy         = { fg = colors.CmpItemAbbrMatchFuzzy, bg = colors.none },
-		CmpItemMenu                   = { fg = colors.CmpItemMenu, bg = colors.none },
+		CmpDocumentation           = { fg = colors.CmpDocumentation },
+		CmpDocumentationBorder     = { fg = colors.CmpDocumentationBorder },
+		CmpItemAbbr                = { fg = colors.CmpItemAbbr },
+		CmpItemAbbrDeprecated      = { fg = colors.CmpItemAbbrDeprecated },
+		CmpItemAbbrMatch           = { fg = colors.CmpItemAbbrMatch },
+		CmpItemAbbrMatchFuzzy      = { fg = colors.CmpItemAbbrMatchFuzzy },
+		CmpItemMenu                = { fg = colors.CmpItemMenu },
 		-- icon colors
-		CmpItemKind                   = { fg = colors.CmpItemKind, bg = colors.none },
-		CmpItemKindClass              = { fg = colors.CmpItemKindClass, bg = colors.none },
-		CmpItemKindFunction           = { fg = colors.CmpItemKindFunction, bg = colors.none },
-		CmpItemKindInterface          = { fg = colors.CmpItemKindInterface, bg = colors.none },
-		CmpItemKindKeyword            = { fg = colors.CmpItemKindKeyword, bg = colors.none },
-		CmpItemKindMethod             = { fg = colors.CmpItemKindMethod, bg = colors.none },
-		CmpItemKindProperty           = { fg = colors.CmpItemKindProperty, bg = colors.none },
-		CmpItemKindText               = { fg = colors.CmpItemKindText, bg = colors.none },
-		CmpItemKindUnit               = { fg = colors.CmpItemKindUnit, bg = colors.none },
-		CmpItemKindVariable           = { fg = colors.CmpItemKindVariable, bg = colors.none },
+		CmpItemKind                = { fg = colors.CmpItemKind },
+		CmpItemKindClass           = { fg = colors.CmpItemKindClass },
+		CmpItemKindFunction        = { fg = colors.CmpItemKindFunction },
+		CmpItemKindInterface       = { fg = colors.CmpItemKindInterface },
+		CmpItemKindKeyword         = { fg = colors.CmpItemKindKeyword },
+		CmpItemKindMethod          = { fg = colors.CmpItemKindMethod },
+		CmpItemKindProperty        = { fg = colors.CmpItemKindProperty },
+		CmpItemKindText            = { fg = colors.CmpItemKindText },
+		CmpItemKindUnit            = { fg = colors.CmpItemKindUnit },
+		CmpItemKindVariable        = { fg = colors.CmpItemKindVariable },
 
 		-- Dashboard: github.com/glepnir/dashboard-nvim
 
-		DashboardCenter               = { fg = colors.DashboardCenter },
-		DashboardFooter               = { fg = colors.DashboardFooter },
-		DashboardHeader               = { fg = colors.DashboardHeader },
+		DashboardCenter            = { fg = colors.DashboardCenter },
+		DashboardFooter            = { fg = colors.DashboardFooter },
+		DashboardHeader            = { fg = colors.DashboardHeader },
 
 		--  Debug:
 
-		debugBreakpoint               = { fg = colors.debugBreakpoint, reverse = true },
-		debugPc                       = { bg = colors.debugPc },
+		debugBreakpoint            = { fg = colors.debugBreakpoint, reverse = true },
+		debugPc                    = { bg = colors.debugPc },
 
 		-- Diffview
 
-		DiffViewNormal                = { fg = colors.DiffViewNormal, bg = colors.second_bg },
-		DiffviewFilePanelDeletion     = { fg = colors.DiffviewFilePanelDeletion },
-		DiffviewFilePanelInsertion    = { fg = colors.DiffviewFilePanelInsertion },
-		DiffviewStatusAdded           = { fg = colors.DiffviewStatusAdded },
-		DiffviewStatusDeleted         = { fg = colors.DiffviewStatusDeleted },
-		DiffviewStatusModified        = { fg = colors.DiffviewStatusModified },
-		DiffviewStatusRenamed         = { fg = colors.DiffviewStatusRenamed },
-		DiffviewVertSplit             = { bg = colors.bg },
+		DiffViewNormal             = { fg = colors.DiffViewNormal, bg = colors.second_bg },
+		DiffviewFilePanelDeletion  = { fg = colors.DiffviewFilePanelDeletion },
+		DiffviewFilePanelInsertion = { fg = colors.DiffviewFilePanelInsertion },
+		DiffviewStatusAdded        = { fg = colors.DiffviewStatusAdded },
+		DiffviewStatusDeleted      = { fg = colors.DiffviewStatusDeleted },
+		DiffviewStatusModified     = { fg = colors.DiffviewStatusModified },
+		DiffviewStatusRenamed      = { fg = colors.DiffviewStatusRenamed },
+		DiffviewVertSplit          = { bg = colors.bg },
 
 		-- Gitsigns: github.com/lewis6991/gitsigns.nvim
 
-		GitSignsAdd                   = { fg = colors.GitAdd },
-		GitSignsChange                = { fg = colors.GitChange },
-		GitSignsDelete                = { fg = colors.GitDelete },
-		GitSignsUntracked             = { fg = colors.GitUntracked },
-		GitSignsAddPreview            = { fg = colors.GitAddPreviewFG, bg = colors.GitAddPreviewBG },
-		GitSignsDeletePreview         = { fg = colors.GitDeletePreviewFG, bg = colors.GitDeletePreviewBG },
-		GitSignsDeleteVirtLn          = { fg = colors.GitDeletePreviewFG, bg = colors.GitDeletePreviewBG },
-		GitSignsDeleteVirtLnInLine    = { fg = colors.GitDeletePreviewFG, bg = colors.GitDeletePreviewBG },
+		GitSignsAdd                = { fg = colors.GitAdd },
+		GitSignsChange             = { fg = colors.GitChange },
+		GitSignsDelete             = { fg = colors.GitDelete },
+		GitSignsUntracked          = { fg = colors.GitUntracked },
+		GitSignsAddPreview         = { fg = colors.GitAddPreviewFG, bg = colors.GitAddPreviewBG },
+		GitSignsDeletePreview      = { fg = colors.GitDeletePreviewFG, bg = colors.GitDeletePreviewBG },
+		GitSignsDeleteVirtLn       = { fg = colors.GitDeletePreviewFG, bg = colors.GitDeletePreviewBG },
+		GitSignsDeleteVirtLnInLine = { fg = colors.GitDeletePreviewFG, bg = colors.GitDeletePreviewBG },
 
 		-- gitgutter: github.com/airblade/vim-gitgutter
 
-		GitGutterAdd                  = { fg = colors.GitGutterAddFG, bg = colors.GitGutterAddBG },
-		GitGutterChange               = { fg = colors.GitGutterChangeFG, bg = colors.GitGutterChangeBG },
-		GitGutterDelete               = { fg = colors.GitGutterDeleteFG, bg = colors.GitGutterDeleteBG },
+		GitGutterAdd               = { fg = colors.GitGutterAddFG, bg = colors.GitGutterAddBG },
+		GitGutterChange            = { fg = colors.GitGutterChangeFG, bg = colors.GitGutterChangeBG },
+		GitGutterDelete            = { fg = colors.GitGutterDeleteFG, bg = colors.GitGutterDeleteBG },
 
 		-- Indent-blankline: github.com/lukas-reineke/indent-blankline.nvim
 
-		IblIndent                     = { fg = colors.IblIndent },
-		IblScope                      = { fg = colors.IblScope },
-		IblContextChar                = { fg = colors.IblContextChar }, -- current Curosr Highlighted function
-		IblSpaceChar                  = { fg = colors.IblSpaceChar }, -- cursor color on indent space
+		IblIndent                  = { fg = colors.IblIndent },
+		IblScope                   = { fg = colors.IblScope },
+		IblContextChar             = { fg = colors.IblContextChar }, -- current Curosr Highlighted function
+		IblSpaceChar               = { fg = colors.IblSpaceChar }, -- cursor color on indent space
 
 		-- Lsp: neovim.io/doc/user/lsp.html
 
-		DiagnosticError               = { fg = colors.DiagnosticError },
-		DiagnosticFloatingError       = { fg = colors.DiagnosticFloatingError },
-		DiagnosticFloatingHint        = { fg = colors.DiagnosticFloatingHint },
-		DiagnosticFloatingInfo        = { fg = colors.DiagnosticFloatingInfo },
-		DiagnosticFloatingWarn        = { fg = colors.DiagnosticFloatingWarn },
-		DiagnosticHint                = { fg = colors.DiagnosticHint },
-		DiagnosticInfo                = { fg = colors.DiagnosticInfo },
-		DiagnosticSignError           = { fg = colors.DiagnosticSignError },
-		DiagnosticSignHint            = { fg = colors.DiagnosticSignHint },
-		DiagnosticSignInfo            = { fg = colors.DiagnosticSignInfo },
-		DiagnosticSignWarn            = { fg = colors.DiagnosticSignWarn },
-		DiagnosticUnderlineError      = { fg = colors.DiagnosticUnderlineError, underline = true, cterm = { underline = true } },
-		DiagnosticUnderlineHint       = { fg = colors.DiagnosticUnderlineHint, underline = true, cterm = { underline = true } },
-		DiagnosticUnderlineInfo       = { fg = colors.DiagnosticUnderlineInfo, underline = true, cterm = { underline = true } },
-		DiagnosticUnderlineWarn       = { fg = colors.DiagnosticUnderlineWarn, underline = true, cterm = { underline = true } },
-		DiagnosticVirtualTextError    = { fg = colors.DiagnosticVirtualTextError },
-		DiagnosticVirtualTextHint     = { fg = colors.DiagnosticVirtualTextHint },
-		DiagnosticVirtualTextInfo     = { fg = colors.DiagnosticVirtualTextInfo },
-		DiagnosticVirtualTextWarn     = { fg = colors.DiagnosticVirtualTextWarn },
-		DiagnosticWarn                = { fg = colors.DiagnosticWarn },
-		LspInlayHint                  = { fg = colors.LspInlayHint, italic = true },
+
+		DiagnosticError             = { fg = colors.DiagnosticError },
+		DiagnosticHint              = { fg = colors.DiagnosticHint },
+		DiagnosticInfo              = { fg = colors.DiagnosticInfo },
+		DiagnosticUnnecessary       = { link = "Comment" },
+		DiagnosticWarn              = { fg = colors.DiagnosticWarn },
+
+		DiagnosticFloatingError     = { link = "DiagnosticError" },
+		DiagnosticFloatingHint      = { link = "DiagnosticHint" },
+		DiagnosticFloatingInfo      = { link = "DiagnosticInfo" },
+		DiagnosticFloatingOk        = { link = "DiagnosticOk" },
+		DiagnosticFloatingWarn      = { link = "DiagnosticWarn" },
+
+		DiagnosticSignError         = { link = "DiagnosticError" },
+		DiagnosticSignHint          = { link = "DiagnosticHint" },
+		DiagnosticSignInfo          = { link = "DiagnosticInfo" },
+		DiagnosticSignOk            = { link = "DiagnosticOk" },
+		DiagnosticSignWarn          = { link = "DiagnosticWarn" },
+
+		DiagnosticUnderlineError    = { fg = colors.DiagnosticUnderlineError, underline = true, cterm = { underline = true } },
+		DiagnosticUnderlineHint     = { fg = colors.DiagnosticUnderlineHint, underline = true, cterm = { underline = true } },
+		DiagnosticUnderlineInfo     = { fg = colors.DiagnosticUnderlineInfo, underline = true, cterm = { underline = true } },
+		DiagnosticUnderlineWarn     = { fg = colors.DiagnosticUnderlineWarn, underline = true, cterm = { underline = true } },
+
+		DiagnosticVirtualTextError  = { link = "DiagnosticError" },
+		DiagnosticVirtualTextHint   = { link = "DiagnosticHint" },
+		DiagnosticVirtualTextInfo   = { link = "DiagnosticInfo" },
+		DiagnosticVirtualTextOk     = { link = "DiagnosticOk" },
+		DiagnosticVirtualTextWarn   = { link = "DiagnosticWarn" },
+
+		LspCodeLens                 = { link = "NonText" },
+		LspCodeLensSeparator        = { link = "LspCodeLens" },
+		LspInlayHint                = { link = "NonText" },
+		LspReferenceRead            = { link = "LspReferenceText" },
+		LspReferenceText            = { link = "Visual" },
+		LspReferenceWrite           = { link = "LspReferenceText" },
+		LspSignatureActiveParameter = { link = "Visual" },
+
 
 		-- lspsaga.nvim: https://github.com/glepnir/lspsaga.nvim
 
@@ -410,203 +604,6 @@ M.highlights = function(colors)
 		NoiceCmdlineIconCmdline       = { fg = colors.fg, bg = colors.bg },
 		NoiceCmdlinePopupBorderSearch = { fg = colors.NoiceCmdlineSearch, bg = colors.bg },
 		NoiceCmdlineIconSearch        = { fg = colors.NoiceCmdlineSearch, bg = colors.bg },
-
-		-----------------------------------------
-		-- LANGUAGE SYNTAX
-		-----------------------------------------
-
-		-- Markdown
-
-		markdownH1                    = { fg = colors.markH },
-		markdownH2                    = { fg = colors.markH },
-		markdownH3                    = { fg = colors.markH },
-		markdownH4                    = { fg = colors.markH },
-		markdownH5                    = { fg = colors.markH },
-		markdownH6                    = { fg = colors.markH },
-		markdownId                    = { fg = colors.markId },
-		markdownUrl                   = { fg = colors.markUrl, underline = true },
-		markdownRule                  = { fg = colors.markRule },
-		markdownBold                  = { fg = colors.markBold, bold = true },
-		markdownCode                  = { fg = colors.markCode },
-		markdownItalic                = { fg = colors.markItalic, italic = true },
-		markdownCodeBlock             = { fg = colors.markCodeBlock },
-		markdownCodeError             = { fg = colors.markCodeError },
-		markdownLinkText              = { fg = colors.markLinkText },
-		markdownListMarker            = { fg = colors.markList },
-		markdownCodeSpecial           = { fg = colors.markCodeSpecial },
-		markdownCodeDelimiter         = { fg = colors.markCodeDelimiter },
-		markdownBlockquote            = { fg = colors.markQuote },
-		markdownIdDeclaration         = { fg = colors.markIdDeclaration },
-		markdownIdDelimiter           = { fg = colors.markIdDelimiter },
-		markdownLinkDelimiter         = { fg = colors.markLinkDelimiter },
-		markdownHeadingRule           = { fg = colors.markHeadingRule },
-		markdownHeadingDelimiter      = { fg = colors.markHeadingDelimiter },
-		markdownUrlTitleDelimiter     = { fg = colors.markUrlTitleDelimiter },
-		markdownOrderedListMarker     = { fg = colors.markOrderedListMarker },
-
-		-- HTML language:
-
-		htmlArg                       = { italic = true },
-
-		-- CSS / SASS / SCSS
-
-		cssFlexibleBoxAttr            = { fg = colors.FlexibleBoxAttr, italic = true }, -- example -> center
-		cssColor                      = { fg = colors.Color, italic = true },     -- example -> green, red, blue
-		cssUnitDecorators             = { italic = true },                        -- exaple -> rem, em, px,
-		cssTagName                    = { fg = colors.TagName },                  -- only changes bold/italic| example -> body, html
-		cssBoxProp                    = { fg = colors.BoxProp },
-		cssBraces                     = { fg = colors.Braces },
-		cssUIProp                     = { fg = colors.UIProp },
-
-		sassDefinition                = { fg = colors.Definition },
-		sassProperty                  = { fg = colors.Property },
-		sassCssAttribute              = { fg = colors.Attribute },
-		sassInclude                   = { fg = colors.Include },
-
-		cssTSPunctDelimiter           = { fg = colors.PunctDelimiter }, -- example -> :
-		cssTSPunctBracket             = { fg = colors.PunctBracket }, -- example -> { },()
-		cssTSProperty                 = { fg = colors.Property }, -- example -> background-color, display, text-align
-		cssTSType                     = { fg = colors.Type },     -- only changes color | example -> body, html
-
-		scssTSProperty                = { fg = colors.Property },
-		scssTSPunctBracket            = { fg = colors.PunctBracket },
-
-		-- JSON Language
-
-		jsonLabel                     = { fg = colors.Label },
-		jsonKeyword                   = { fg = colors.Label },
-		jsonKeywordMatch              = { fg = colors.KeywordMatch, bold = true },
-		jsonString                    = { fg = colors.String, italic = true },
-
-		jsonTSLabel                   = { fg = colors.Label },
-		jsonTSPunctBracket            = { fg = colors.PunctBracket, bold = true },
-
-		-- MAKE Language
-
-		cmakeCommand                  = { fg = colors.Command },
-		cmakeArguments                = { fg = colors.Arguments },
-		cmakeKWvariable_watch         = { fg = colors.KWvariable_watch },
-		cmakeKWproject                = { fg = colors.KWproject },
-		cmakeGeneratorExpressions     = { fg = colors.GeneratorExpressions },
-		cmakeVariable                 = { fg = colors.Variable },
-		cmakeKWuse_mangled_mesa       = { fg = colors.fg, italic = true },
-		cmakeTSVariable               = { fg = colors.Variable },
-
-		-----------------------------------------
-		-- treesitter:  github.com/nvim-treesitter/nvim-treesitter
-		-----------------------------------------
-
-		-- Identifiers
-		["@variable"]                 = { fg = colors.Variable },           -- various variable names
-		["@variable.builtin"]         = { fg = colors.VariableBuiltin },    -- built-in variable names (e.g. `this`)
-		["@variable.parameter"]       = { fg = colors.Parameter, italic = true }, -- parameters of a function
-		["@variable.member"]          = { fg = colors.Field },              -- object and struct fields
-		["@constant"]                 = { fg = colors.Constant },           -- constant identifiers
-		["@constant.builtin"]         = { fg = colors.ConstBuiltin },       -- built-in constant values
-		["@constant.macro"]           = { fg = colors.ConstMacro },         -- constants defined by the preprocessor
-		["@module"]                   = { fg = colors.Namespace },          -- modules or namespaces
-		-- ["@module.builtin"]     = {  }, -- built-in modules or namespaces
-		["@label"]                    = { fg = colors.Label },              -- GOTO and other labels (e.g. `label:` in C), including heredoc labels
-		--------------------------------
-		-- Literals
-		["@string"]                   = { fg = colors.String },          -- string literals
-		-- ["@string.documentation"] = {}, -- string documenting code (e.g. Python docstrings)
-		["@string.regexp"]            = { fg = colors.StringRegex },     -- regular expressions
-		["@string.escape"]            = { fg = colors.StringEscape },    -- escape sequences
-		-- ["@string.special"]       = {}, -- other special strings (e.g. dates)
-		["@string.special.symbol"]    = { fg = colors.Symbol },          -- symbols or atoms
-		["@string.special.url"]       = { fg = colors.URI, underline = true }, -- URIs (e.g. hyperlinks)
-		-- ["@string.special.path"]  = {}, -- filenames
-		["@character"]                = { fg = colors.Character },       -- character literals
-		-- ["@character.special"]    = {}, -- special characters (e.g. wildcards)
-		["@boolean"]                  = { fg = colors.Boolean },         -- boolean literals
-		["@number"]                   = { fg = colors.Number },          -- numeric literals
-		["@number.float"]             = { fg = colors.Float },           -- floating-point number literals
-		--------------------------------
-		-- Types
-		["@type"]                     = { fg = colors.Type },  -- type or class definitions and annotations
-		["@type.builtin"]             = { fg = colors.TypeBuiltin }, -- built-in types
-		-- ["@type.definition"] = {}, -- identifiers in type definitions (e.g. `typedef <type> <identifier>` in C)
-		-- ["@type.qualifier"]  = {}, -- type qualifiers (e.g. `const`)
-		["@attribute"]                = { fg = colors.Attribute }, -- attribute annotations (e.g. Python decorators)
-		["@property"]                 = { fg = colors.Property }, -- the key in key/value pairs
-		-- Functions
-		--------------------------------
-		["@function"]                 = { fg = colors.Function }, -- function definitions
-		["@function.builtin"]         = { fg = colors.FuncBuiltin }, -- built-in functions
-		-- ["@function.call"]        = {},-- function calls
-		["@function.macro"]           = { fg = colors.FuncMacro }, -- preprocessor macros
-		["@function.method"]          = { fg = colors.Method }, -- method definitions
-		-- ["@function.method.call"] = {},-- method calls
-		["@constructor"]              = { fg = colors.Constructor }, -- constructor calls and definitions
-		["@operator"]                 = { fg = colors.Operator }, -- symbolic operators (e.g. `+` / `*`)
-		--------------------------------
-		-- Keywords
-		["@keyword"]                  = { fg = colors.Keyword },   -- keywords not fitting into specific categories
-		-- ["@keyword.coroutine"]           = {}, -- keywords related to coroutines (e.g. `go` in Go, `async/await` in Python)
-		["@keyword.function"]         = { fg = colors.KeywordFunction }, -- keywords that define a function (e.g. `func` in Go, `def` in Python)
-		["@keyword.operator"]         = { fg = colors.KeywordOperator }, -- operators that are English words (e.g. `and` / `or`)
-		-- ["@keyword.import"]              = {}, -- keywords for including modules (e.g. `import` / `from` in Python)
-		-- ["@keyword.storage"]             = {}, -- modifiers that affect storage in memory or life-time
-		["@keyword.repeat"]           = { fg = colors.Repeat },  -- keywords related to loops (e.g. `for` / `while`)
-		["@keyword.return"]           = { fg = colors.KeywordReturn }, -- keywords like `return` and `yield`
-		-- ["@keyword.debug"]               = {}, -- keywords related to debugging
-		["@keyword.exception"]        = { fg = colors.Exception }, -- keywords related to exceptions (e.g. `throw` / `catch`)
-		-- ["@keyword.conditional"]         = {}, -- keywords related to conditionals (e.g. `if` / `else`)
-		-- ["@keyword.conditional.ternary"] = {}, -- ternary operator (e.g. `?` / `:`)
-		-- ["@keyword.directive"]           = {}, -- various preprocessor directives & shebangs
-		-- ["@keyword.directive.define"]    = {}, -- preprocessor definition directives
-		--------------------------------
-		-- Punctuation
-		["@punctuation.delimiter"]    = { fg = colors.PunctDelimiter }, -- delimiters (e.g. `--` / `.` / `,`)
-		["@punctuation.bracket"]      = { fg = colors.PunctBracket }, -- brackets (e.g. `()` / `{}` / `[]`)
-		["@punctuation.special"]      = { fg = colors.PunctSpecial }, -- special symbols (e.g. `{}` in string interpolation)
-		--------------------------------
-		-- Comments
-		["@comment"]                  = { fg = colors.Comment, italic = true }, -- line and block comments
-		-- ["@comment.documentation"] = {}, -- comments documenting code
-		["@comment.error"]            = { fg = colors.Error, bold = true },   -- error-type comments (e.g., `DEPRECATED:`)
-		["@comment.warning"]          = { fg = colors.Warning, bold = true }, -- warning-type comments (e.g., `WARNING:`, `FIX:`)
-		["@comment.hint"]             = { fg = colors.Note },                 -- note-type comments (e.g., `NOTE:`)
-		-- ["@comment.info"]          = {}, -- info-type comments
-		["@comment.todo"]             = { fg = colors.TodoFG, bg = colors.TodoBG }, -- todo-type comments (e.g-, `TODO:`, `WIP:`)
-		--------------------------------
-		-- Markup
-		["@markup.strong"]            = { fg = colors.Strong },              -- bold text
-		["@markup.italic"]            = { fg = colors.markItalic, italic = true }, -- text with emphasis
-		-- ["@markup.strikethrough"]  = {}, -- strikethrough text
-		["@markup.underline"]         = { underline = true },                -- underlined text (only for literal underline markup!)
-		["@markup.heading"]           = { fg = colors.Title },               -- headings, titles (including markers)
-		["@markup.quote"]             = { fg = colors.markQuote },           -- block quotes
-		-- ["@markup.math"]           = {}, -- math environments (e.g. `$ ... $` in LaTeX)
-		-- ["@markup.environment"]    = {}, -- environments (e.g. in LaTeX)
-		["@markup.link"]              = { fg = colors.markLinkText }, -- text references, footnotes, citations, etc.
-		-- ["@markup.link.label"]     = {}, -- link, reference descriptions
-		-- ["@markup.link.url"]       = {}, -- URL-style links
-		-- ["@markup.raw"]            = {}, -- literal or verbatim text (e.g., inline code)
-		-- ["@markup.raw.block"]      = {}, -- literal or verbatim text as a stand-alone block (use priority 90 for blocks with injections)
-		["@markup.list"]              = { fg = colors.markList }, -- list markers
-		-- ["@markup.list.checked"]   = {}, -- checked todo-style list markers
-		-- ["@markup.list.unchecked"] = {}, -- unchecked todo-style list markers
-		-- ["@diff.plus"]             = {}, -- added text (for diff files)
-		-- ["@diff.minus"]            = {}, -- deleted text (for diff files)
-		-- ["@diff.delta"]            = {}, -- changed text (for diff files)
-		--------------------------------
-		-- Non-highlighting captures
-		-- ["@none"]    = {}, -- completely disable the highlight
-		["@conceal"]                  = { fg = colors.fg }, -- captures that are only meant to be concealed
-		-- ["@spell"]   = {}, -- for defining regions to be spellchecked
-		-- ["@nospell"] = {}, -- for defining regions that should NOT be spellchecked
-		--------------------------------
-		-- Others
-		["@tag"]                      = { fg = colors.Tag },
-		-- TSInclude            = { fg=colors.Include },
-		-- TSTagAttribute       = { fg=colors.TagAttribute },
-		-- TSAnnotation         = { fg=colors.Annotation },
-		-- TSStructure          = { fg=colors.Structure },
-		-- TSTagDelimiter       = { fg=colors.TagDelimiter },
-		-- TSQueryLinterError   = { fg=colors.QueryLinterError },
-		-- TSParameterReference = { fg=colors.ParameterReference },
 	}
 end
 
