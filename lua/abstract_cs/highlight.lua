@@ -604,6 +604,193 @@ M.highlights = function(colors)
 		NoiceCmdlineIconCmdline       = { fg = colors.fg, bg = colors.bg },
 		NoiceCmdlinePopupBorderSearch = { fg = colors.NoiceCmdlineSearch, bg = colors.bg },
 		NoiceCmdlineIconSearch        = { fg = colors.NoiceCmdlineSearch, bg = colors.bg },
+
+
+
+		-----------------------------------------
+		--  Other
+		-----------------------------------------
+
+		-- Highlight groups (links) used by parser:
+
+		NvimAssignment                  = { link = "Operator" },
+		NvimPlainAssignment             = { link = "NvimAssignment" },
+		NvimAugmentedAssignment         = { link = "NvimAssignment" },
+		NvimAssignmentWithAddition      = { link = "NvimAugmentedAssignment" },
+		NvimAssignmentWithSubtraction   = { link = "NvimAugmentedAssignment" },
+		NvimAssignmentWithConcatenation = { link = "NvimAugmentedAssignment" },
+
+		NvimOperator                    = { link = "Operator" },
+
+		NvimUnaryOperator               = { link = "NvimOperator" },
+		NvimUnaryPlus                   = { link = "NvimUnaryOperator" },
+		NvimUnaryMinus                  = { link = "NvimUnaryOperator" },
+		NvimNot                         = { link = "NvimUnaryOperator" },
+
+		NvimBinaryOperator              = { link = "NvimOperator" },
+		NvimComparison                  = { link = "NvimBinaryOperator" },
+		NvimComparisonModifier          = { link = "NvimComparison" },
+		NvimBinaryPlus                  = { link = "NvimBinaryOperator" },
+		NvimBinaryMinus                 = { link = "NvimBinaryOperator" },
+		NvimConcat                      = { link = "NvimBinaryOperator" },
+		NvimConcatOrSubscript           = { link = "NvimConcat" },
+		NvimOr                          = { link = "NvimBinaryOperator" },
+		NvimAnd                         = { link = "NvimBinaryOperator" },
+		NvimMultiplication              = { link = "NvimBinaryOperator" },
+		NvimDivision                    = { link = "NvimBinaryOperator" },
+		NvimMod                         = { link = "NvimBinaryOperator" },
+
+		NvimTernary                     = { link = "NvimOperator" },
+		NvimTernaryColon                = { link = "NvimTernary" },
+
+		NvimParenthesis                 = { link = "Delimiter" },
+		NvimLambda                      = { link = "NvimParenthesis" },
+		NvimNestingParenthesis          = { link = "NvimParenthesis" },
+		NvimCallingParenthesis          = { link = "NvimParenthesis" },
+
+		NvimSubscript                   = { link = "NvimParenthesis" },
+		NvimSubscriptBracket            = { link = "NvimSubscript" },
+		NvimSubscriptColon              = { link = "NvimSubscript" },
+		NvimCurly                       = { link = "NvimSubscript" },
+
+		NvimContainer                   = { link = "NvimParenthesis" },
+		NvimDict                        = { link = "NvimContainer" },
+		NvimList                        = { link = "NvimContainer" },
+
+		NvimIdentifier                  = { link = "Identifier" },
+		NvimIdentifierScope             = { link = "NvimIdentifier" },
+		NvimIdentifierScopeDelimiter    = { link = "NvimIdentifier" },
+		NvimIdentifierName              = { link = "NvimIdentifier" },
+		NvimIdentifierKey               = { link = "NvimIdentifier" },
+
+		NvimColon                       = { link = "Delimiter" },
+		NvimComma                       = { link = "Delimiter" },
+		NvimArrow                       = { link = "Delimiter" },
+
+		NvimRegister                    = { link = "SpecialChar" },
+		NvimNumber                      = { link = "Number" },
+		NvimFloat                       = { link = "NvimNumber" },
+		NvimNumberPrefix                = { link = "Type" },
+
+		NvimOptionSigil                 = { link = "Type" },
+		NvimOptionName                  = { link = "NvimIdentifier" },
+		NvimOptionScope                 = { link = "NvimIdentifierScope" },
+		NvimOptionScopeDelimiter        = { link = "NvimIdentifierScopeDelimiter" },
+
+		NvimEnvironmentSigil            = { link = "NvimOptionSigil" },
+		NvimEnvironmentName             = { link = "NvimIdentifier" },
+
+		NvimString                      = { link = "String" },
+		NvimStringBody                  = { link = "NvimString" },
+		NvimStringQuote                 = { link = "NvimString" },
+		NvimStringSpecial               = { link = "SpecialChar" },
+
+		NvimSingleQuote                 = { link = "NvimStringQuote" },
+		NvimSingleQuotedBody            = { link = "NvimStringBody" },
+		NvimSingleQuotedQuote           = { link = "NvimStringSpecial" },
+
+		NvimDoubleQuote                 = { link = "NvimStringQuote" },
+		NvimDoubleQuotedBody            = { link = "NvimStringBody" },
+		NvimDoubleQuotedEscape          = { link = "NvimStringSpecial" },
+
+		NvimFigureBrace                 = { link = "NvimInternalError" },
+		NvimSingleQuotedUnknownEscape   = { link = "NvimInternalError" },
+
+		NvimSpacing                     = { link = "Normal" },
+
+
+		NvimInvalidSingleQuotedUnknownEscape   = { link = "NvimInternalError" },
+
+		NvimInvalid                            = { link = "Error" },
+
+		NvimInvalidAssignment                  = { link = "NvimInvalid" },
+		NvimInvalidPlainAssignment             = { link = "NvimInvalidAssignment" },
+		NvimInvalidAugmentedAssignment         = { link = "NvimInvalidAssignment" },
+		NvimInvalidAssignmentWithAddition      = { link = "NvimInvalidAugmentedAssignment" },
+		NvimInvalidAssignmentWithSubtraction   = { link = "NvimInvalidAugmentedAssignment" },
+		NvimInvalidAssignmentWithConcatenation = { link = "NvimInvalidAugmentedAssignment" },
+
+		NvimInvalidOperator                    = { link = "NvimInvalid" },
+
+		NvimInvalidUnaryOperator               = { link = "NvimInvalidOperator" },
+		NvimInvalidUnaryPlus                   = { link = "NvimInvalidUnaryOperator" },
+		NvimInvalidUnaryMinus                  = { link = "NvimInvalidUnaryOperator" },
+		NvimInvalidNot                         = { link = "NvimInvalidUnaryOperator" },
+
+		NvimInvalidBinaryOperator              = { link = "NvimInvalidOperator" },
+		NvimInvalidComparison                  = { link = "NvimInvalidBinaryOperator" },
+		NvimInvalidComparisonModifier          = { link = "NvimInvalidComparison" },
+		NvimInvalidBinaryPlus                  = { link = "NvimInvalidBinaryOperator" },
+		NvimInvalidBinaryMinus                 = { link = "NvimInvalidBinaryOperator" },
+		NvimInvalidConcat                      = { link = "NvimInvalidBinaryOperator" },
+		NvimInvalidConcatOrSubscript           = { link = "NvimInvalidConcat" },
+		NvimInvalidOr                          = { link = "NvimInvalidBinaryOperator" },
+		NvimInvalidAnd                         = { link = "NvimInvalidBinaryOperator" },
+		NvimInvalidMultiplication              = { link = "NvimInvalidBinaryOperator" },
+		NvimInvalidDivision                    = { link = "NvimInvalidBinaryOperator" },
+		NvimInvalidMod                         = { link = "NvimInvalidBinaryOperator" },
+
+		NvimInvalidTernary                     = { link = "NvimInvalidOperator" },
+		NvimInvalidTernaryColon                = { link = "NvimInvalidTernary" },
+
+		NvimInvalidDelimiter                   = { link = "NvimInvalid" },
+
+		NvimInvalidParenthesis                 = { link = "NvimInvalidDelimiter" },
+		NvimInvalidLambda                      = { link = "NvimInvalidParenthesis" },
+		NvimInvalidNestingParenthesis          = { link = "NvimInvalidParenthesis" },
+		NvimInvalidCallingParenthesis          = { link = "NvimInvalidParenthesis" },
+
+		NvimInvalidSubscript                   = { link = "NvimInvalidParenthesis" },
+		NvimInvalidSubscriptBracket            = { link = "NvimInvalidSubscript" },
+		NvimInvalidSubscriptColon              = { link = "NvimInvalidSubscript" },
+		NvimInvalidCurly                       = { link = "NvimInvalidSubscript" },
+
+		NvimInvalidContainer                   = { link = "NvimInvalidParenthesis" },
+		NvimInvalidDict                        = { link = "NvimInvalidContainer" },
+		NvimInvalidList                        = { link = "NvimInvalidContainer" },
+
+		NvimInvalidValue                       = { link = "NvimInvalid" },
+
+		NvimInvalidIdentifier                  = { link = "NvimInvalidValue" },
+		NvimInvalidIdentifierScope             = { link = "NvimInvalidIdentifier" },
+		NvimInvalidIdentifierScopeDelimiter    = { link = "NvimInvalidIdentifier" },
+		NvimInvalidIdentifierName              = { link = "NvimInvalidIdentifier" },
+		NvimInvalidIdentifierKey               = { link = "NvimInvalidIdentifier" },
+
+		NvimInvalidColon                       = { link = "NvimInvalidDelimiter" },
+		NvimInvalidComma                       = { link = "NvimInvalidDelimiter" },
+		NvimInvalidArrow                       = { link = "NvimInvalidDelimiter" },
+
+		NvimInvalidRegister                    = { link = "NvimInvalidValue" },
+		NvimInvalidNumber                      = { link = "NvimInvalidValue" },
+		NvimInvalidFloat                       = { link = "NvimInvalidNumber" },
+		NvimInvalidNumberPrefix                = { link = "NvimInvalidNumber" },
+
+		NvimInvalidOptionSigil                 = { link = "NvimInvalidIdentifier" },
+		NvimInvalidOptionName                  = { link = "NvimInvalidIdentifier" },
+		NvimInvalidOptionScope                 = { link = "NvimInvalidIdentifierScope" },
+		NvimInvalidOptionScopeDelimiter        = { link = "NvimInvalidIdentifierScopeDelimiter" },
+
+		NvimInvalidEnvironmentSigil            = { link = "NvimInvalidOptionSigil" },
+		NvimInvalidEnvironmentName             = { link = "NvimInvalidIdentifier" },
+
+		NvimInvalidString                      = { link = "NvimInvalidValue" },
+		NvimInvalidStringBody                  = { link = "NvimStringBody" },
+		NvimInvalidStringQuote                 = { link = "NvimInvalidString" },
+		NvimInvalidStringSpecial               = { link = "NvimStringSpecial" },
+
+		NvimInvalidSingleQuote                 = { link = "NvimInvalidStringQuote" },
+		NvimInvalidSingleQuotedBody            = { link = "NvimInvalidStringBody" },
+		NvimInvalidSingleQuotedQuote           = { link = "NvimInvalidStringSpecial" },
+
+		NvimInvalidDoubleQuote                 = { link = "NvimInvalidStringQuote" },
+		NvimInvalidDoubleQuotedBody            = { link = "NvimInvalidStringBody" },
+		NvimInvalidDoubleQuotedEscape          = { link = "NvimInvalidStringSpecial" },
+		NvimInvalidDoubleQuotedUnknownEscape   = { link = "NvimInvalidValue" },
+
+		NvimInvalidFigureBrace                 = { link = "NvimInvalidDelimiter" },
+
+		NvimInvalidSpacing                     = { link = "ErrorMsg" },
 	}
 end
 
