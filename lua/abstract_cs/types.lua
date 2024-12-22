@@ -173,6 +173,28 @@
 ---@field BufferVisibleTarget string
 ---@field BuffNumbers string
 ---@field BufferSelected string
+-- github.com/Saghen/blink.cmp
+---@field BlinkCmpMenu string
+---@field BlinkCmpMenuBorder string
+-- ---@field BlinkCmpMenuSelection string
+-- ---@field BlinkCmpScrollBarThumb string
+-- ---@field BlinkCmpScrollBarGutter string
+-- ---@field BlinkCmpLabel string
+-- ---@field BlinkCmpLabelDeprecated string
+---@field BlinkCmpLabelMatch string
+-- ---@field BlinkCmpLabelDetail string
+-- ---@field BlinkCmpLabelDescription string
+-- ---@field BlinkCmpKind string
+-- ---@field BlinkCmpSource string
+-- ---@field BlinkCmpGhostText string
+-- ---@field BlinkCmpDoc string
+-- ---@field BlinkCmpDocBorder string
+-- ---@field BlinkCmpDocSeparator string
+-- ---@field BlinkCmpDocCursorLine string
+-- ---@field BlinkCmpSignatureHelp string
+-- ---@field BlinkCmpSignatureHelpBorder string
+-- ---@field BlinkCmpSignatureHelpActiveParameter string
+-- github.com/hrsh7th/nvim-cmp
 ---@field CmpDocumentation string
 ---@field CmpDocumentationBorder string
 ---@field CmpItemAbbr string

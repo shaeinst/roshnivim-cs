@@ -364,6 +364,28 @@ M.highlights = function(colors)
 		TabFG                      = { fg = colors.TabFG },
 		TabBG                      = { bg = colors.TabBG },
 
+		-- Blink.cmp: https://github.com/Saghen/blink.cmp
+		BlinkCmpMenu               = { fg = colors.CmpItemMenu },      --  The completion menu window
+		BlinkCmpMenuBorder         = { fg = colors.CmpDocumentationBorder }, --  The completion menu window border
+		-- BlinkCmpMenuSelection                = { fg = "", bg = "" }, --  PmenuSel	The completion menu window selected item
+		-- BlinkCmpScrollBarThumb               = { fg = "", bg = "" }, --  PmenuThumb	The scrollbar thumb
+		-- BlinkCmpScrollBarGutter              = { fg = "", bg = "" }, --  PmenuSbar	The scrollbar gutter
+		-- BlinkCmpLabel                        = { fg = "", bg = "" }, --  Pmenu Label of the completion item
+		-- BlinkCmpLabelDeprecated              = { fg = "", bg = "" }, --  NonText	Deprecated label of the completion item
+		BlinkCmpLabelMatch         = { fg = colors.CmpItemAbbrMatch }, --  (Currently unused) Label of the completion item when it matches the query
+		-- BlinkCmpLabelDetail                  = { fg = "", bg = "" }, --  NonText	Label description of the completion item
+		-- BlinkCmpLabelDescription             = { fg = "", bg = "" }, --  NonText	Label description of the completion item
+		-- BlinkCmpKind                         = { fg = "", bg = "" }, --  Special	Kind icon/text of the completion item
+		-- BlinkCmpSource                       = { fg = "", bg = "" }, --  NonText	Source of the completion item
+		-- BlinkCmpGhostText                    = { fg = "", bg = "" }, --  NonText	Preview item with ghost text
+		-- BlinkCmpDoc                          = { fg = "", bg = "" }, --  NormalFloat	The documentation window
+		-- BlinkCmpDocBorder                    = { fg = "", bg = "" }, --  NormalFloat	The documentation window border
+		-- BlinkCmpDocSeparator                 = { fg = "", bg = "" }, --  NormalFloat	The documentation separator between doc and detail
+		-- BlinkCmpDocCursorLine                = { fg = "", bg = "" }, --  Visual	The documentation window cursor line
+		-- BlinkCmpSignatureHelp                = { fg = "", bg = "" }, --  NormalFloat	The signature help window
+		-- BlinkCmpSignatureHelpBorder          = { fg = "", bg = "" }, --  NormalFloat	The signature help window border
+		-- BlinkCmpSignatureHelpActiveParameter = { fg = "", bg = "" }, --	 LspSignatureActiveParameter	Active parameter of the signature help
+
 		-- Cmp: github.com/hrsh7th/nvim-cmp
 
 		CmpDocumentation           = { fg = colors.CmpDocumentation },
