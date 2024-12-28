@@ -166,7 +166,7 @@ M.highlights = function(colors)
 		Typedef                         = { link = "Type" },
 		VertSplit                       = { link = "WinSeparator" },
 		VisualNOS                       = { link = "Visual" },
-		Whitespace                      = { link = "NonText" },
+		Whitespace                      = { fg = colors.Whitespace },
 		WildMenu                        = { link = "PmenuSel" },
 		WinSeparator                    = { link = "Normal" },
 

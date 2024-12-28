@@ -51,7 +51,7 @@ M.colors = {
 	VisualNOSFG               = "#21252D",
 	WarningMsgBG              = "#ED722E",
 	WarningMsgFG              = "#21252D",
-	Whitespace                = "#373C45",
+	Whitespace                = "#212520",
 	lCursorBG                 = "#AEAFAD",
 	lCursorFG                 = "#515052",
 
