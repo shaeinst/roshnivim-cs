@@ -173,7 +173,7 @@
 ---@field BufferVisibleTarget string
 ---@field BuffNumbers string
 ---@field BufferSelected string
--- github.com/Saghen/blink.cmp
+-- blink.cmp: github.com/Saghen/blink.cmp
 ---@field BlinkCmpMenu string
 ---@field BlinkCmpMenuBorder string
 -- ---@field BlinkCmpMenuSelection string
@@ -262,6 +262,7 @@
 ---@field GitGutterChangeBG string
 ---@field GitGutterDeleteFG string
 ---@field GitGutterDeleteBG string
+-- https://github.com/lukas-reineke/indent-blankline.nvim
 ---@field IblIndent string
 ---@field IblScope string
 ---@field IblContextChar string
@@ -299,15 +300,22 @@
 ---@field NeogitDiffDelete string
 ---@field NeogitHunkHeader string
 ---@field NeogitRemote string
+-- snacks.nvim: github.com/folke/snacks.nvim
+---@field SnacksIndentScope string
+---@field SnacksIndentChunk string
+---@field SnacksIndent string
+--
 ---@field TabSelectedFG string
 ---@field TabSelectedBG string
 ---@field TabFG string
 ---@field TabBG string
+-- telescope.nvim: github.com/nvim-telescope/telescope.nvim
 ---@field TelescopeBorder string
 ---@field TelescopeMatching string
 ---@field TelescopePromptPrefix string
 ---@field TelescopeSelectionFG string
 ---@field TelescopeSelectionBG string
+-- trouble.nvim: github.com/folke/trouble.nvim
 ---@field TroubleFile string
 ---@field TroubleFoldIcon string
 ---@field TroubleCountFG string
@@ -320,6 +328,7 @@
 ---@field TroubleSignHint string
 ---@field TroubleSignWarn string
 ---@field TroubleCode string
+-- https://github.com/SmiteshP/nvim-navic
 ---@field NavicSeparator string
 ---@field NavicText string
 ---@field NavicIconsFileIcon string
@@ -349,4 +358,5 @@
 ---@field NavicIconsStruct string
 ---@field NavicIconsTypeParameter string
 ---@field NavicIconsVariable string
+-- https://github.com/folke/noice.nvim
 ---@field NoiceCmdlineSearch string

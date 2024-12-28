@@ -555,6 +555,12 @@ M.highlights = function(colors)
 		NeoTreeModified               = { fg = colors.NeoTreeModified },
 		NeoTreeFileName               = { fg = colors.NeoTreeFileName },
 
+		-- snacks.nvim: github.com/folke/snacks.nvim
+
+		SnacksIndent                  = { fg = colors.SnacksIndent },
+		SnacksIndentChunk             = { fg = colors.SnacksIndentChunk },
+		SnacksIndentScope             = { fg = colors.SnacksIndentScope },
+
 		-- telescope: github.com/nvim-telescope/telescope.nvim
 
 		TelescopeBorder               = { fg = colors.TelescopeBorder, bg = colors.bg },

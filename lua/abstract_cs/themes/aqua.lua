@@ -341,6 +341,11 @@ M.colors = {
 	NeogitHunkHeader           = "#BBBBBB",
 	NeogitRemote               = "#D16BB7",
 
+	-- snacks.nvim: github.com/folke/snacks.nvim
+	SnacksIndent               = "#111111",
+	SnacksIndentChunk          = "#888888",
+	SnacksIndentScope          = "#777777",
+
 	TabSelectedFG              = "#FFFFFF",
 	TabSelectedBG              = "#141414",
 	TabFG                      = "#FFFFFF",
