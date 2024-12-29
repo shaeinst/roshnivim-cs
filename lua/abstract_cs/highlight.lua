@@ -372,9 +372,9 @@ M.highlights = function(colors)
 		-- BlinkCmpScrollBarGutter              = { fg = "", bg = "" }, --  PmenuSbar	The scrollbar gutter
 		-- BlinkCmpLabel                        = { fg = "", bg = "" }, --  Pmenu Label of the completion item
 		-- BlinkCmpLabelDeprecated              = { fg = "", bg = "" }, --  NonText	Deprecated label of the completion item
-		BlinkCmpLabelMatch         = { fg = colors.CmpItemAbbrMatch }, --  (Currently unused) Label of the completion item when it matches the query
+		BlinkCmpLabelMatch         = { fg = colors.CmpItemAbbrMatch },   --  (Currently unused) Label of the completion item when it matches the query
 		-- BlinkCmpLabelDetail                  = { fg = "", bg = "" }, --  NonText	Label description of the completion item
-		-- BlinkCmpLabelDescription             = { fg = "", bg = "" }, --  NonText	Label description of the completion item
+		BlinkCmpLabelDescription   = { fg = colors.BlinkCmpLabelDescription }, --  NonText	Label description of the completion item
 		-- BlinkCmpKind                         = { fg = "", bg = "" }, --  Special	Kind icon/text of the completion item
 		-- BlinkCmpSource                       = { fg = "", bg = "" }, --  NonText	Source of the completion item
 		-- BlinkCmpGhostText                    = { fg = "", bg = "" }, --  NonText	Preview item with ghost text

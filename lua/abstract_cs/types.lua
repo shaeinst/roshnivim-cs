@@ -183,7 +183,7 @@
 -- ---@field BlinkCmpLabelDeprecated string
 ---@field BlinkCmpLabelMatch string
 -- ---@field BlinkCmpLabelDetail string
--- ---@field BlinkCmpLabelDescription string
+---@field BlinkCmpLabelDescription string
 -- ---@field BlinkCmpKind string
 -- ---@field BlinkCmpSource string
 -- ---@field BlinkCmpGhostText string
