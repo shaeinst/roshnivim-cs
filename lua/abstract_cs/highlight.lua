@@ -560,6 +560,18 @@ M.highlights = function(colors)
 		SnacksIndent                  = { fg = colors.SnacksIndent },
 		SnacksIndentChunk             = { fg = colors.SnacksIndentChunk },
 		SnacksIndentScope             = { fg = colors.SnacksIndentScope },
+		-- Dashboard
+		SnacksDashboardNormal         = { fg = colors.SnacksDashboardNormal }, -- Normal for the dashboard. dedfault: Normal
+		SnacksDashboardDesc           = { fg = colors.SnacksDashboardDesc }, -- 	Description text in dashboard. default: Special
+		SnacksDashboardFile           = { fg = colors.SnacksDashboardFile }, -- 	Dashboard file items. Default: Special
+		SnacksDashboardDir            = { fg = colors.SnacksDashboardDir }, -- 	Directory items. Default: NonText
+		SnacksDashboardFooter         = { fg = colors.SnacksDashboardFooter }, -- Dashboard footer text. Default: Title
+		SnacksDashboardHeader         = { fg = colors.SnacksDashboardHeader }, -- Dashboard header text. Default: Title
+		SnacksDashboardIcon           = { fg = colors.SnacksDashboardIcon }, -- 	Dashboard icons. Detault: Special
+		SnacksDashboardKey            = { fg = colors.SnacksDashboardKey }, -- Keybind text. Detault: Number
+		SnacksDashboardTerminal       = { fg = colors.SnacksDashboardTerminal }, --	Terminal text. Detault. SnacksDashboardNormal
+		SnacksDashboardSpecial        = { fg = colors.SnacksDashboardSpecial }, --	Special elements. Detault: Special
+		SnacksDashboardTitle          = { fg = colors.SnacksDashboardTitle }, -- Title text. Detault: Title
 
 		-- telescope: github.com/nvim-telescope/telescope.nvim
 

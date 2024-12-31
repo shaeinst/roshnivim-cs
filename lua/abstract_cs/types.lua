@@ -304,6 +304,17 @@
 ---@field SnacksIndentScope string
 ---@field SnacksIndentChunk string
 ---@field SnacksIndent string
+---@field SnacksDashboardNormal string
+---@field SnacksDashboardDesc string
+---@field SnacksDashboardDir string
+---@field SnacksDashboardFile string
+---@field SnacksDashboardFooter string
+---@field SnacksDashboardHeader string
+---@field SnacksDashboardIcon string
+---@field SnacksDashboardKey string
+---@field SnacksDashboardSpecial string
+---@field SnacksDashboardTerminal string
+---@field SnacksDashboardTitle string
 --
 ---@field TabSelectedFG string
 ---@field TabSelectedBG string
