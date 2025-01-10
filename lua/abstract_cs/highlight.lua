@@ -393,7 +393,7 @@ M.highlights = function(colors)
 		CmpDocumentationBorder     = { fg = colors.CmpDocumentationBorder },
 		CmpItemAbbrMatch           = { fg = colors.CmpItemAbbrMatch },
 		CmpItemAbbr                = { link = "CmpDocumentation" },
-		CmpItemAbbrDeprecated      = { link = "CmpItemAbbrDeprecated" },
+		CmpItemAbbrDeprecated      = { link = "CmpDocumentationBorder" },
 		CmpItemAbbrMatchFuzzy      = { link = "CmpItemAbbrMatch" },
 		-- icon colors
 		CmpItemKindClass           = { fg = colors.CmpItemKindClass },
