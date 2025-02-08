@@ -474,10 +474,10 @@ M.highlights = function(colors)
 		DiagnosticSignOk            = { link = "DiagnosticOk" },
 		DiagnosticSignWarn          = { link = "DiagnosticWarn" },
 
-		DiagnosticUnderlineError    = { sp = colors.DiagnosticUnderlineError, underline = true, cterm = { underline = true } },
-		DiagnosticUnderlineHint     = { sp = colors.DiagnosticUnderlineHint, underline = true, cterm = { underline = true } },
-		DiagnosticUnderlineInfo     = { sp = colors.DiagnosticUnderlineInfo, underline = true, cterm = { underline = true } },
-		DiagnosticUnderlineWarn     = { sp = colors.DiagnosticUnderlineWarn, underline = true, cterm = { underline = true } },
+		DiagnosticUnderlineError    = { sp = colors.DiagnosticError, underline = true, cterm = { underline = true } },
+		DiagnosticUnderlineHint     = { sp = colors.DiagnosticHint, underline = true, cterm = { underline = true } },
+		DiagnosticUnderlineInfo     = { sp = colors.DiagnosticInfo, underline = true, cterm = { underline = true } },
+		DiagnosticUnderlineWarn     = { sp = colors.DiagnosticWarn, underline = true, cterm = { underline = true } },
 
 		DiagnosticVirtualTextError  = { link = "DiagnosticError" },
 		DiagnosticVirtualTextHint   = { link = "DiagnosticHint" },
