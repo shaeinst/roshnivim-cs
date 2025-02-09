@@ -86,7 +86,7 @@
 ---@field Parameter string
 ---@field ParameterReference string
 ---@field PreProc string
----@field Property	 string
+---@field Property string
 ---@field PunctBracket string
 ---@field PunctDelimiter string
 ---@field PunctSpecial string
@@ -206,7 +206,6 @@
 -- https://github.com/lukas-reineke/indent-blankline.nvim
 ---@field IblIndent string
 ---@field IblScope string
----@field IblContextChar string
 ---@field IblSpaceChar string
 ---@field IndentGuidesEven string
 ---@field IndentGuidesOdd string
@@ -247,14 +246,6 @@
 ---@field SnacksDashboardNormal string
 ---@field SnacksDashboardDesc string
 ---@field SnacksDashboardDir string
----@field SnacksDashboardFile string
----@field SnacksDashboardFooter string
----@field SnacksDashboardHeader string
----@field SnacksDashboardIcon string
----@field SnacksDashboardKey string
----@field SnacksDashboardSpecial string
----@field SnacksDashboardTerminal string
----@field SnacksDashboardTitle string
 --
 ---@field TabSelectedFG string
 ---@field TabSelectedBG string

@@ -450,7 +450,7 @@ M.highlights = function(colors)
 
 		IblIndent                  = { fg = colors.IblIndent },
 		IblScope                   = { fg = colors.IblScope },
-		IblContextChar             = { fg = colors.IblContextChar }, -- current Curosr Highlighted function
+		IblContextChar             = { link = "IblScope" },  -- current Curosr Highlighted function
 		IblSpaceChar               = { fg = colors.IblSpaceChar }, -- cursor color on indent space
 
 		-- Lsp: neovim.io/doc/user/lsp.html
@@ -561,17 +561,17 @@ M.highlights = function(colors)
 		SnacksIndentChunk             = { fg = colors.SnacksIndentChunk },
 		SnacksIndentScope             = { fg = colors.SnacksIndentScope },
 		-- Dashboard
-		SnacksDashboardNormal         = { fg = colors.SnacksDashboardNormal }, -- Normal for the dashboard. dedfault: Normal
 		SnacksDashboardDesc           = { fg = colors.SnacksDashboardDesc }, -- 	Description text in dashboard. default: Special
-		SnacksDashboardFile           = { fg = colors.SnacksDashboardFile }, -- 	Dashboard file items. Default: Special
 		SnacksDashboardDir            = { fg = colors.SnacksDashboardDir }, -- 	Directory items. Default: NonText
-		SnacksDashboardFooter         = { fg = colors.SnacksDashboardFooter }, -- Dashboard footer text. Default: Title
-		SnacksDashboardHeader         = { fg = colors.SnacksDashboardHeader }, -- Dashboard header text. Default: Title
-		SnacksDashboardIcon           = { fg = colors.SnacksDashboardIcon }, -- 	Dashboard icons. Detault: Special
-		SnacksDashboardKey            = { fg = colors.SnacksDashboardKey }, -- Keybind text. Detault: Number
-		SnacksDashboardTerminal       = { fg = colors.SnacksDashboardTerminal }, --	Terminal text. Detault. SnacksDashboardNormal
-		SnacksDashboardSpecial        = { fg = colors.SnacksDashboardSpecial }, --	Special elements. Detault: Special
-		SnacksDashboardTitle          = { fg = colors.SnacksDashboardTitle }, -- Title text. Detault: Title
+		SnacksDashboardNormal         = { fg = colors.SnacksDashboardNormal }, -- Normal for the dashboard. dedfault: Normal
+		SnacksDashboardFile           = { link = "SnacksDashboardDir" }, -- 	Dashboard file items. Default: Special
+		SnacksDashboardFooter         = { link = "SnacksDashboardDesc" }, -- Dashboard footer text. Default: Title
+		SnacksDashboardHeader         = { link = "SnacksDashboardDesc" }, -- Dashboard header text. Default: Title
+		SnacksDashboardIcon           = { link = "SnacksDashboardNormal" }, -- 	Dashboard icons. Detault: Special
+		SnacksDashboardKey            = { link = "SnacksDashboardNormal" }, -- Keybind text. Detault: Number
+		SnacksDashboardSpecial        = { link = "SnacksDashboardNormal" }, --	Special elements. Detault: Special
+		SnacksDashboardTerminal       = { link = "SnacksDashboardTerminal" }, --	Terminal text. Detault. SnacksDashboardNormal
+		SnacksDashboardTitle          = { link = "SnacksDashboardDesc" }, -- Title text. Detault: Title
 
 		-- telescope: github.com/nvim-telescope/telescope.nvim
 

@@ -221,7 +221,6 @@ M.colors = {
 
 	IblIndent                  = "#111111",
 	IblScope                   = "#777777",
-	IblContextChar             = "#777777",
 	IblSpaceChar               = "#126b70",
 
 	IndentGuidesEven           = "#FFFADE",
@@ -268,14 +267,6 @@ M.colors = {
 	SnacksDashboardNormal      = "#1D918B",
 	SnacksDashboardDesc        = "#EEEEEE",
 	SnacksDashboardDir         = "#999999",
-	SnacksDashboardFile        = "#999999",
-	SnacksDashboardFooter      = "#FFFFFF",
-	SnacksDashboardHeader      = "#FFFFFF",
-	SnacksDashboardIcon        = "#1D918B",
-	SnacksDashboardKey         = "#1D918B",
-	SnacksDashboardSpecial     = "#1D918B",
-	SnacksDashboardTerminal    = "#999999",
-	SnacksDashboardTitle       = "#FFFFFF",
 
 	TabSelectedFG              = "#FFFFFF",
 	TabSelectedBG              = "#141414",
@@ -301,9 +292,6 @@ M.colors = {
 	TroubleSignWarn            = "#444400",
 	TroubleCode                = "#444400",
 
-	NavicSeparator             = "#51578f",
-	NavicText                  = "#666666",
-	NavicIconsFileIcon         = "#ACACAC",
 	NavicIconsArray            = "#8b1540",
 	NavicIconsBoolean          = "#015c8a",
 	NavicIconsClass            = "#8d5c18",
@@ -314,6 +302,7 @@ M.colors = {
 	NavicIconsEvent            = "#8f476b",
 	NavicIconsField            = "#038286",
 	NavicIconsFile             = "#acacac",
+	NavicIconsFileIcon         = "#ACACAC",
 	NavicIconsFunction         = "#722587",
 	NavicIconsInterface        = "#8b2c27",
 	NavicIconsKey              = "#8a0015",
@@ -330,6 +319,8 @@ M.colors = {
 	NavicIconsStruct           = "#8c1717",
 	NavicIconsTypeParameter    = "#4d748f",
 	NavicIconsVariable         = "#008470",
+	NavicSeparator             = "#51578f",
+	NavicText                  = "#666666",
 
 	NoiceCmdlineSearch         = "#E25600",
 }
